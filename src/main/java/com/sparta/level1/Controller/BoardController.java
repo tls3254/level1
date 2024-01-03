@@ -51,8 +51,6 @@ public class BoardController {
     }
 
     //선택한 게시글 조회 기능
-    //선택한 게시글의 정보를 조회할 수 있습니다.
-    //반환 받은 게시글의 정보에 `비밀번호`는 제외 되어있습니다.
     @GetMapping("/board/{id}")
     public List<BoardResponseDto> getSelectBoard(@PathVariable Long id){
         String sql ="SELECT * FROM board where id =?";
