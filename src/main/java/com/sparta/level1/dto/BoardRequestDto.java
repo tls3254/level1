@@ -9,7 +9,7 @@ import java.sql.Date;
 public class BoardRequestDto {
     private String title;
     private String contents;
-    private String username ="adsf";
-    private String password = "qwer";
+    private String username ;
+    private String password;
     private String date;
 }
